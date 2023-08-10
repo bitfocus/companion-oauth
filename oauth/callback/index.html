@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Companion OAuth</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script type="text/javascript" src="callback.js"></script>
+	</head>
+
+	<body>
+		<h1>Pass OAuth token to Companion</h1>
+
+		<div id="show_url">
+			<p>
+				<strong>Your instance url:</strong>&nbsp;
+				<span id="companion_url"></span>
+				<a href="#" id="companion_url_edit">
+					<svg width="18" height="18" viewBox="0 0 24 24">
+						<path
+							fill="white"
+							d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+						></path>
+					</svg>
+				</a>
+			</p>
+			<p>
+				<button id="open_url" disabled>Open URL</button>
+			</p>
+		</div>
+
+		<div id="fail" style="display: none">
+			<p>Invalid request data</p>
+		</div>
+
+		<div id="edit_url" style="display: none">
+			<p>
+				<label for="url">Instance URL</label>
+				<input name="url" id="edit_url_field" value="" />
+			</p>
+			<p>
+				<button id="save_url">Save</button>
+			</p>
+		</div>
+	</body>
+</html>
